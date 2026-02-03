@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --text-color: #5c0202;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-text-color: var(--text-color);
+  --font-inter: var(--font-inter);
+  --font-montserrat: var(--font-montserrat);
+  --font-playsfair: var(--font-playsfair);
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--background);
+  color: var(--text-color);
+  font-family: var(--font-montserrat), sans-serif;
+}
